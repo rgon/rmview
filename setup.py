@@ -52,3 +52,4 @@ setup(
     'egg_info': genResourcesEggInfo,
   }
 )
+
