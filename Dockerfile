@@ -11,7 +11,7 @@ RUN apt-get install -y \
 RUN apt-get clean
 
 WORKDIR /rmview
-COPY pyproject.toml poetry.lock assets bin src README.md ./
+COPY pyproject.toml build.py setup.py poetry.lock assets bin src README.md ./
 RUN pip install .[tunnel]
 
 CMD rmview
